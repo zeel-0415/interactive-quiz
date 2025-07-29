@@ -8,7 +8,6 @@ This is a simple interactive quiz project built using HTML, CSS, and JavaScript.
 - 1 to 10 questions per session
 - Each question has:
   - Hint
-  - Image (optional)
   - Explainer in result
 - Progress bar with timer
 
