@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+      <h1>Quiz Game</h1>
+      <input type="text" id="userName" placeholder="Enter your name" />
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <input type="number" id="questionCount" placeholder="No. of Questions (1–10)" min="1" max="10" />
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container" class="screen">
+      <div id="question-box"></div>
+      <div id="options-box"></div>
+      <div class="timer-bar">
+        <div id="progress-bar"></div>
+      </div>
+      <button onclick="submitAnswer()">Submit</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
